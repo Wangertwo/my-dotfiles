@@ -1,0 +1,28 @@
+# Local secrets
+.env
+.env.*
+private.*
+private.fish
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor and OS state
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs and backups
+*.log
+*.bak
+*.backup-*
+*.backup.*
+tmux.conf.backup-*
+
+# Nested repositories and caches
+.git
+.cache/
+node_modules/

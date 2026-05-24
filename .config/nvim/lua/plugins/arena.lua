@@ -1,0 +1,36 @@
+return {
+    "dzfrias/arena.nvim",
+    event = "BufWinEnter",
+    opts = {
+        ignore_current = true,
+        always_context = {
+            "mod.rs",
+            "init.lua",
+            "README.md",
+            "SKILL.md",
+            "__init__.py",
+            "__main__.py",
+            "index.js",
+            "index.ts",
+            "index.jsx",
+            "index.tsx",
+            "lib.rs",
+            "main.rs",
+            "config",
+            "config.yml",
+            "config.yaml",
+            "config.json",
+            "settings.json",
+            "Dockerfile",
+        },
+        devicons = true,
+        window = {
+            width = 60,
+            height = 10,
+            border = "rounded",
+        },
+    },
+    keys = {
+        { "<leader>ba", "<cmd>ArenaToggle<CR>", desc = "Toggle Arena" },
+    },
+}
