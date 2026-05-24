@@ -114,8 +114,14 @@ if status is-interactive
     end
 end
 
-source ~/.claude/integration.fish
+if test -f ~/.claude/integration.fish
+    source ~/.claude/integration.fish
+end
 
-source ~/.claude/integration-providers.fish
+if test -f ~/.claude/integration-providers.fish
+    source ~/.claude/integration-providers.fish
+end
 
-fish_add_path -p "/mnt/d/software/Visual Studio Code/bin"
+if test -d "/mnt/d/software/Visual Studio Code/bin"
+    fish_add_path -p "/mnt/d/software/Visual Studio Code/bin"
+end
